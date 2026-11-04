@@ -1,0 +1,936 @@
+{
+  "pages": [
+    {
+      "url": "https://www.kokosorganic.com.ph/",
+      "title": "Cocoplus",
+      "file": "home",
+      "images": 45
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/1",
+      "title": "Our Virgin Coconut Oil | Cocoplus",
+      "file": "node_1",
+      "images": 1
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/10",
+      "title": "Philexport | Cocoplus",
+      "file": "node_10",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/11",
+      "title": "Philfooddex | Cocoplus",
+      "file": "node_11",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/12",
+      "title": "Alafop | Cocoplus",
+      "file": "node_12",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/13",
+      "title": "Pitc | Cocoplus",
+      "file": "node_13",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/14",
+      "title": "Vcop | Cocoplus",
+      "file": "node_14",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/products/organic-coconut-sugar",
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/products/organic-coconut-cooking-oil-rbd",
+      "title": "Organic Coconut Cooking Oil (RBD) | Cocoplus",
+      "file": "products_organic-coconut-cooking-oil-rbd",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/products/mix-cream-skimmed-coconut-milk",
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/products/organic-virgin-coconut-oil",
+      "title": "Organic Virgin Coconut Oil | Cocoplus",
+      "file": "products_organic-virgin-coconut-oil",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/products/aqua-scent-vco-massage-oil-lavender-scent",
+      "title": "Aqua Scent VCO Massage Oil (Lavender Scent) | Cocoplus",
+      "file": "products_aqua-scent-vco-massage-oil-lavender-scent",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/2",
+      "title": "Gallery 1 | Cocoplus",
+      "file": "node_2",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/products/aqua-scent-vco-massage-oil-ginger-eucalyptus",
+      "title": "Aqua Scent VCO Massage Oil (Ginger Eucalyptus) | Cocoplus",
+      "file": "products_aqua-scent-vco-massage-oil-ginger-eucalyptus",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/products/skimmed-coconut-milk-beverage",
+      "title": "Skimmed Coconut Milk Beverage | Cocoplus",
+      "file": "products_skimmed-coconut-milk-beverage",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/process/process",
+      "title": "Process | Cocoplus",
+      "file": "process_process",
+      "images": 1
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/guandong-21st-century-maritime-silk-road-international-expo",
+      "title": "Guandong 21st Century Maritime Silk Road International Expo | Cocoplus",
+      "file": "news-events_guandong-21st-century-maritime-silk-road-international-expo",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/anuga-2019",
+      "title": "ANUGA 2019 | Cocoplus",
+      "file": "news-events_anuga-2019",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/agrilink-2019",
+      "title": "AGRILINK 2019 | Cocoplus",
+      "file": "news-events_agrilink-2019",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/vegfest-pilipinas-2019",
+      "title": "VegFest Pilipinas 2019 | Cocoplus",
+      "file": "news-events_vegfest-pilipinas-2019",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/3",
+      "title": "Gallery 2 | Cocoplus",
+      "file": "node_3",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/philippine-festival-tokyo",
+      "title": "Philippine Festival in Tokyo | Cocoplus",
+      "file": "news-events_philippine-festival-tokyo",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/world-bazaar-festival-2019",
+      "title": "World Bazaar Festival 2019 | Cocoplus",
+      "file": "news-events_world-bazaar-festival-2019",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/kalakal-calabarzon-2019",
+      "title": "KALAKAL CALABARZON 2019 | Cocoplus",
+      "file": "news-events_kalakal-calabarzon-2019",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/national-food-fair-2020",
+      "title": "National Food Fair 2020 | Cocoplus",
+      "file": "news-events_national-food-fair-2020",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/filipino-franchise-business-expo",
+      "title": "Filipino Franchise Business Expo | Cocoplus",
+      "file": "news-events_filipino-franchise-business-expo",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/philippine-international-hot-air-balloon-2020",
+      "title": "PHILIPPINE INTERNATIONAL HOT AIR BALLOON 2020 | Cocoplus",
+      "file": "news-events_philippine-international-hot-air-balloon-2020",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/contact-us/contact-info",
+      "title": "Contact Info | Cocoplus",
+      "file": "contact-us_contact-info",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/about-us/history",
+      "title": "History | Cocoplus",
+      "file": "about-us_history",
+      "images": 1
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/about-us/our-virgin-coconut-oil",
+      "title": "Our Virgin Coconut Oil | Cocoplus",
+      "file": "about-us_our-virgin-coconut-oil",
+      "images": 1
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/4",
+      "title": "CocoPlus Aquarian Development Corporation | Cocoplus",
+      "file": "node_4",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/about-us/mission",
+      "title": "Mission | Cocoplus",
+      "file": "about-us_mission",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/about-us/vision",
+      "title": "Vision | Cocoplus",
+      "file": "about-us_vision",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/about-us/our-partners",
+      "title": "Our Partners | Cocoplus",
+      "file": "about-us_our-partners",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/about-us/core-values",
+      "title": "Core Values | Cocoplus",
+      "file": "about-us_core-values",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/banner/about-us",
+      "title": "About us | Cocoplus",
+      "file": "banner_about-us",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/banner/inner-page-banner",
+      "title": "Inner page banner | Cocoplus",
+      "file": "banner_inner-page-banner",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/banner/inner-news-banner",
+      "title": "Inner news banner | Cocoplus",
+      "file": "banner_inner-news-banner",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/home",
+      "title": "Cocoplus",
+      "file": "home",
+      "images": 45
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/national-food-fair-2021",
+      "title": "National Food Fair 2021 | Cocoplus",
+      "file": "news-events_national-food-fair-2021",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/5",
+      "title": "GMP Quality | Cocoplus",
+      "file": "node_5",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/sustainability-expo-2021",
+      "title": "Sustainability Expo 2021 | Cocoplus",
+      "file": "news-events_sustainability-expo-2021",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/thaifex-2023",
+      "title": "THAIFEX 2023 | Cocoplus",
+      "file": "news-events_thaifex-2023",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/ifex-2023",
+      "title": "IFEX 2023 | Cocoplus",
+      "file": "news-events_ifex-2023",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/national-trade-fair-2023",
+      "title": "National Trade Fair 2023 | Cocoplus",
+      "file": "news-events_national-trade-fair-2023",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/3rd-world-coconut-congress",
+      "title": "3rd World Coconut Congress | Cocoplus",
+      "file": "news-events_3rd-world-coconut-congress",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/anuga-germany",
+      "title": "Anuga Germany | Cocoplus",
+      "file": "news-events_anuga-germany",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/malaysia-international-halal-showcase-2023",
+      "title": "Malaysia International Halal Showcase 2023 | Cocoplus",
+      "file": "news-events_malaysia-international-halal-showcase-2023",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/fabej-japan-2024",
+      "title": "FABEJ JAPAN 2024 | Cocoplus",
+      "file": "news-events_fabej-japan-2024",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/ifex-2024",
+      "title": "IFEX 2024 | Cocoplus",
+      "file": "news-events_ifex-2024",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/6",
+      "title": "FDA | Cocoplus",
+      "file": "node_6",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/mafbex-2024",
+      "error": "The read operation timed out"
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/biofach-japan-2024",
+      "title": "BIOFACH JAPAN 2024 | Cocoplus",
+      "file": "news-events_biofach-japan-2024",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/products/coco-collagen",
+      "title": "Coco Collagen | Cocoplus",
+      "file": "products_coco-collagen",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/biofach-china-2026",
+      "title": "BIOFACH CHINA 2026 | Cocoplus",
+      "file": "news-events_biofach-china-2026",
+      "images": 3
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/9",
+      "title": "Halal | Cocoplus",
+      "file": "node_9",
+      "images": 2
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/about-us",
+      "title": "About Us | Cocoplus",
+      "file": "about-us",
+      "images": 6
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/cdn-cgi/l/email-protection",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/node/home",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/products/home",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/process/home",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/news-events/home",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/contact-us/home",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/about-us/home",
+      "title": "About Us | Cocoplus",
+      "file": "about-us_home",
+      "images": 1
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/banner/home",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/page/about-us",
+      "title": "About Us | Cocoplus",
+      "file": "page_about-us",
+      "images": 1
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/page/inner-product",
+      "title": "Inner product | Cocoplus",
+      "file": "page_inner-product",
+      "images": 1
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/page/inner-news",
+      "title": "Inner news | Cocoplus",
+      "file": "page_inner-news",
+      "images": 1
+    },
+    {
+      "url": "https://www.kokosorganic.com.ph/page/home",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "images": {
+    "https://www.kokosorganic.com.ph/sites/default/files/logo.png": {
+      "alt": "Home",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/node/1",
+        "https://www.kokosorganic.com.ph/node/10",
+        "https://www.kokosorganic.com.ph/node/11",
+        "https://www.kokosorganic.com.ph/node/12",
+        "https://www.kokosorganic.com.ph/node/13",
+        "https://www.kokosorganic.com.ph/node/14",
+        "https://www.kokosorganic.com.ph/products/organic-coconut-cooking-oil-rbd",
+        "https://www.kokosorganic.com.ph/products/organic-virgin-coconut-oil",
+        "https://www.kokosorganic.com.ph/products/aqua-scent-vco-massage-oil-lavender-scent",
+        "https://www.kokosorganic.com.ph/node/2",
+        "https://www.kokosorganic.com.ph/products/aqua-scent-vco-massage-oil-ginger-eucalyptus",
+        "https://www.kokosorganic.com.ph/products/skimmed-coconut-milk-beverage",
+        "https://www.kokosorganic.com.ph/process/process",
+        "https://www.kokosorganic.com.ph/news-events/guandong-21st-century-maritime-silk-road-international-expo",
+        "https://www.kokosorganic.com.ph/news-events/anuga-2019",
+        "https://www.kokosorganic.com.ph/news-events/agrilink-2019",
+        "https://www.kokosorganic.com.ph/news-events/vegfest-pilipinas-2019",
+        "https://www.kokosorganic.com.ph/node/3",
+        "https://www.kokosorganic.com.ph/news-events/philippine-festival-tokyo",
+        "https://www.kokosorganic.com.ph/news-events/world-bazaar-festival-2019",
+        "https://www.kokosorganic.com.ph/news-events/kalakal-calabarzon-2019",
+        "https://www.kokosorganic.com.ph/news-events/national-food-fair-2020",
+        "https://www.kokosorganic.com.ph/news-events/filipino-franchise-business-expo",
+        "https://www.kokosorganic.com.ph/news-events/philippine-international-hot-air-balloon-2020",
+        "https://www.kokosorganic.com.ph/contact-us/contact-info",
+        "https://www.kokosorganic.com.ph/about-us/history",
+        "https://www.kokosorganic.com.ph/about-us/our-virgin-coconut-oil",
+        "https://www.kokosorganic.com.ph/node/4",
+        "https://www.kokosorganic.com.ph/about-us/mission",
+        "https://www.kokosorganic.com.ph/about-us/vision",
+        "https://www.kokosorganic.com.ph/about-us/our-partners",
+        "https://www.kokosorganic.com.ph/about-us/core-values",
+        "https://www.kokosorganic.com.ph/banner/about-us",
+        "https://www.kokosorganic.com.ph/banner/inner-page-banner",
+        "https://www.kokosorganic.com.ph/banner/inner-news-banner",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/national-food-fair-2021",
+        "https://www.kokosorganic.com.ph/node/5",
+        "https://www.kokosorganic.com.ph/news-events/sustainability-expo-2021",
+        "https://www.kokosorganic.com.ph/news-events/thaifex-2023",
+        "https://www.kokosorganic.com.ph/news-events/ifex-2023",
+        "https://www.kokosorganic.com.ph/news-events/national-trade-fair-2023",
+        "https://www.kokosorganic.com.ph/news-events/3rd-world-coconut-congress",
+        "https://www.kokosorganic.com.ph/news-events/anuga-germany",
+        "https://www.kokosorganic.com.ph/news-events/malaysia-international-halal-showcase-2023",
+        "https://www.kokosorganic.com.ph/news-events/fabej-japan-2024",
+        "https://www.kokosorganic.com.ph/news-events/ifex-2024",
+        "https://www.kokosorganic.com.ph/node/6",
+        "https://www.kokosorganic.com.ph/news-events/biofach-japan-2024",
+        "https://www.kokosorganic.com.ph/products/coco-collagen",
+        "https://www.kokosorganic.com.ph/news-events/biofach-china-2026",
+        "https://www.kokosorganic.com.ph/node/9",
+        "https://www.kokosorganic.com.ph/about-us",
+        "https://www.kokosorganic.com.ph/about-us/home",
+        "https://www.kokosorganic.com.ph/page/about-us",
+        "https://www.kokosorganic.com.ph/page/inner-product",
+        "https://www.kokosorganic.com.ph/page/inner-news"
+      ],
+      "file": "fadc5d_logo.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/gallery/PROD_0.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/node/2",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "951aa5_PROD_0.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/gallery/massage%20oil-great%20image2.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/node/3",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "3b9b63_massage_20oil-great_20image2.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/logo/Coco Plus Logo-01_0.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "error": "URL can't contain control characters. '/sites/default/files/logo/Coco Plus Logo-01_0.png' (found at least ' ')"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/about%20us/about-us-img_1.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/node/4",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "3e0084_about-us-img_1.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/certificate/HALAL.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/node/9"
+      ],
+      "file": "55d896_HALAL.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/certificate/FDA-Logo.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/node/6"
+      ],
+      "file": "ad2c9a_FDA-Logo.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/certificate/GMP%20Logo.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/node/5"
+      ],
+      "file": "cb8d80_GMP_20Logo.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/affiliates/VCOP%20logo_20%20inches%20300%20dpi_print%20%281%29.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/node/14",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "aa8af5_VCOP_20logo_20_20inches_20300_20dpi_print_20_281_29.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/affiliates/Philippine-International-Trading-Corporation-PITC.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/node/13",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "a818c3_Philippine-International-Trading-Corporation-PITC.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/affiliates/4c7a4f03-0397-495a-b8cd-0c335ed8fffe.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/node/12",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "a24640_4c7a4f03-0397-495a-b8cd-0c335ed8fffe.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/affiliates/PHILFOODEX.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/node/11",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "04c8df_PHILFOODEX.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/affiliates/philexport_logo_small.gif": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/node/10",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "f32560_philexport_logo_small.gif"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/products/COCOSOAP%20%281%29.png": {
+      "alt": "Coco Collagen",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/products/coco-collagen"
+      ],
+      "file": "31d331_COCOSOAP_20_281_29.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/products/Picture5.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/products/skimmed-coconut-milk-beverage",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "f3d5c5_Picture5.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/products/Picture3.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/products/aqua-scent-vco-massage-oil-ginger-eucalyptus",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "9e81d5_Picture3.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/products/Picture4.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/products/aqua-scent-vco-massage-oil-lavender-scent",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "4871b5_Picture4.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/products/Picture2vo.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/products/organic-virgin-coconut-oil",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "c706b3_Picture2vo.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/products/scm%20250g%20gi_0%20%281%29.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "754245_scm_20250g_20gi_0_20_281_29.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/products/Picture1.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/products/organic-coconut-cooking-oil-rbd",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "2dbe53_Picture1.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/products/Cocoplus%20Coco%20Sugar%20%281%29.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "893b25_Cocoplus_20Coco_20Sugar_20_281_29.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/1756300216468.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/biofach-china-2026"
+      ],
+      "file": "2dcd6d_1756300216468.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/BIOFACH.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/biofach-japan-2024"
+      ],
+      "file": "5d218a_BIOFACH.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/MAFBEX.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "ec7b99_MAFBEX.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/438237661_3601869003397756_1748679098109319823_n_0.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/ifex-2024"
+      ],
+      "file": "0aa58f_438237661_3601869003397756_1748679098109319823_n_0.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/News-Center-Foodex-Japan-2024-2048x1536.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/fabej-japan-2024"
+      ],
+      "file": "a0947d_News-Center-Foodex-Japan-2024-2048x1536.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/595131971356b-mihas.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/malaysia-international-halal-showcase-2023"
+      ],
+      "file": "b53a50_595131971356b-mihas.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/anuga-23-cologne-germany.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/anuga-germany"
+      ],
+      "file": "a52e78_anuga-23-cologne-germany.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/coco.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/3rd-world-coconut-congress"
+      ],
+      "file": "f58e3b_coco.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/nt.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/national-trade-fair-2023"
+      ],
+      "file": "d4ca2a_nt.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/IFEX-DIGITAL-BANNER-01.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/ifex-2023"
+      ],
+      "file": "e29341_IFEX-DIGITAL-BANNER-01.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/THAIFEX-ANUGA-ASIA.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/thaifex-2023"
+      ],
+      "file": "8e7720_THAIFEX-ANUGA-ASIA.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/sustainability%20expo.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/sustainability-expo-2021"
+      ],
+      "file": "fbb82e_sustainability_20expo.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/NATIONAL_FOOD_FAIR_LOGO.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/home",
+        "https://www.kokosorganic.com.ph/news-events/national-food-fair-2021"
+      ],
+      "file": "687b3b_NATIONAL_FOOD_FAIR_LOGO.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/Philippine-Hot-Air-Balloon-Fiesta-photo-by-Balloonteam.net_.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/news-events/philippine-international-hot-air-balloon-2020",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "12ee3b_Philippine-Hot-Air-Balloon-Fiesta-photo-by-Balloonteam.net_.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/FFBEX2020-SIDEBAR-LOGO1.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/news-events/filipino-franchise-business-expo",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "1569b8_FFBEX2020-SIDEBAR-LOGO1.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/86700440_2894731177258171_5061973181468770304_o.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/news-events/national-food-fair-2020",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "824616_86700440_2894731177258171_5061973181468770304_o.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/4_8-12-19_KalakalCalabarzon.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/news-events/kalakal-calabarzon-2019",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "85e402_4_8-12-19_KalakalCalabarzon.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/eventlogo-1519181936.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/news-events/world-bazaar-festival-2019",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "4d7262_eventlogo-1519181936.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/Philippine-Festival-iStock-epixx-770x514.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/news-events/philippine-festival-tokyo",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "472f8a_Philippine-Festival-iStock-epixx-770x514.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/vf.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/news-events/vegfest-pilipinas-2019",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "b1f68d_vf.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/agrilink-philippines.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/news-events/agrilink-2019",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "a3a5ea_agrilink-philippines.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/anuga.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/news-events/anuga-2019",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "1798b0_anuga.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/news%20%26%20events/5cc7e8aaa6f7c.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/news-events/guandong-21st-century-maritime-silk-road-international-expo",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "12f776_5cc7e8aaa6f7c.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/sugar_0.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/",
+        "https://www.kokosorganic.com.ph/contact-us/contact-info",
+        "https://www.kokosorganic.com.ph/home"
+      ],
+      "file": "385674_sugar_0.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/banner/aceitedecocopacity_0.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/products/organic-coconut-cooking-oil-rbd",
+        "https://www.kokosorganic.com.ph/products/organic-virgin-coconut-oil",
+        "https://www.kokosorganic.com.ph/products/aqua-scent-vco-massage-oil-lavender-scent",
+        "https://www.kokosorganic.com.ph/products/aqua-scent-vco-massage-oil-ginger-eucalyptus",
+        "https://www.kokosorganic.com.ph/products/skimmed-coconut-milk-beverage",
+        "https://www.kokosorganic.com.ph/banner/inner-page-banner",
+        "https://www.kokosorganic.com.ph/products/coco-collagen"
+      ],
+      "file": "9b9911_aceitedecocopacity_0.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/banner/aceitedecocopacity_1.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/news-events/guandong-21st-century-maritime-silk-road-international-expo",
+        "https://www.kokosorganic.com.ph/news-events/anuga-2019",
+        "https://www.kokosorganic.com.ph/news-events/agrilink-2019",
+        "https://www.kokosorganic.com.ph/news-events/vegfest-pilipinas-2019",
+        "https://www.kokosorganic.com.ph/news-events/philippine-festival-tokyo",
+        "https://www.kokosorganic.com.ph/news-events/world-bazaar-festival-2019",
+        "https://www.kokosorganic.com.ph/news-events/kalakal-calabarzon-2019",
+        "https://www.kokosorganic.com.ph/news-events/national-food-fair-2020",
+        "https://www.kokosorganic.com.ph/news-events/filipino-franchise-business-expo",
+        "https://www.kokosorganic.com.ph/news-events/philippine-international-hot-air-balloon-2020",
+        "https://www.kokosorganic.com.ph/banner/inner-news-banner",
+        "https://www.kokosorganic.com.ph/news-events/national-food-fair-2021",
+        "https://www.kokosorganic.com.ph/news-events/sustainability-expo-2021",
+        "https://www.kokosorganic.com.ph/news-events/thaifex-2023",
+        "https://www.kokosorganic.com.ph/news-events/ifex-2023",
+        "https://www.kokosorganic.com.ph/news-events/national-trade-fair-2023",
+        "https://www.kokosorganic.com.ph/news-events/3rd-world-coconut-congress",
+        "https://www.kokosorganic.com.ph/news-events/anuga-germany",
+        "https://www.kokosorganic.com.ph/news-events/malaysia-international-halal-showcase-2023",
+        "https://www.kokosorganic.com.ph/news-events/fabej-japan-2024",
+        "https://www.kokosorganic.com.ph/news-events/ifex-2024",
+        "https://www.kokosorganic.com.ph/news-events/biofach-japan-2024",
+        "https://www.kokosorganic.com.ph/news-events/biofach-china-2026"
+      ],
+      "file": "173692_aceitedecocopacity_1.png"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/about%20us/pexels-photo-288477.jpeg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/about-us/mission",
+        "https://www.kokosorganic.com.ph/about-us"
+      ],
+      "file": "752610_pexels-photo-288477.jpeg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/about%20us/vision.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/about-us/vision",
+        "https://www.kokosorganic.com.ph/about-us"
+      ],
+      "file": "bb9d76_vision.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/about%20us/ourpartners.jpeg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/about-us/our-partners",
+        "https://www.kokosorganic.com.ph/about-us"
+      ],
+      "file": "fcf752_ourpartners.jpeg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/about%20us/maxresdefault.jpg": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/about-us/core-values",
+        "https://www.kokosorganic.com.ph/about-us"
+      ],
+      "file": "9cb94b_maxresdefault.jpg"
+    },
+    "https://www.kokosorganic.com.ph/sites/default/files/banner/aceitedecocopacity.png": {
+      "alt": "",
+      "pages": [
+        "https://www.kokosorganic.com.ph/banner/about-us",
+        "https://www.kokosorganic.com.ph/about-us"
+      ],
+      "file": "111823_aceitedecocopacity.png"
+    }
+  }
+}
