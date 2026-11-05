@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+@import "lenis/dist/lenis.css";
 
 /* Light mode only (brand decision). The dark variant is kept so block
    source compiles, but no .dark class is ever applied. */
@@ -73,13 +74,14 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border outline-ring;
   }
   body {
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans scroll-smooth;
+    /* No CSS smooth scroll: Lenis (components/smooth-scroll.tsx) owns it. */
+    @apply font-sans;
   }
   /* Bebas Neue is single-weight and all caps: never fake-bold it. */
   .font-heading {
@@ -92,4 +94,90 @@
   html {
     scroll-behavior: auto;
   }
+}
+
+/* Preloader holds the page until it hands over (components/preloader.tsx). */
+html[data-loading] {
+  overflow: hidden;
+}
+
+/* ── Tape language ──────────────────────────────────────────────
+   Colour blocks meet on torn edges instead of lines. The edge is drawn
+   in the block's own colour (background: inherit) and overlaps the block
+   above/below, so the section needs a solid background and must not use
+   overflow: hidden on the y axis (use overflow-x-clip). */
+:root {
+  --torn-edge: 6px; /* keep the tear subtle */
+  --torn-top: polygon(0 100%, 0.0% 34%, 2.7% 8%, 4.5% 31%, 7.0% 5%, 10.5% 41%, 12.8% 20%, 16.0% 46%, 17.4% 35%, 19.2% 47%, 20.8% 39%, 23.3% 12%, 24.6% 66%, 28.3% 8%, 30.7% 67%, 32.4% 29%, 35.0% 47%, 36.9% 12%, 40.7% 31%, 42.5% 38%, 44.6% 11%, 47.8% 25%, 49.9% 6%, 53.5% 17%, 57.0% 33%, 58.8% 42%, 61.1% 53%, 63.9% 10%, 65.7% 32%, 67.2% 3%, 69.4% 48%, 72.3% 67%, 74.4% 31%, 76.9% 31%, 80.2% 32%, 82.6% 18%, 84.4% 52%, 85.9% 19%, 89.1% 60%, 92.8% 65%, 96.3% 52%, 99.1% 39%, 100.0% 23%, 100% 100%);
+  --torn-bottom: polygon(0 0, 0.0% 66%, 2.7% 92%, 4.5% 69%, 7.0% 95%, 10.5% 59%, 12.8% 80%, 16.0% 54%, 17.4% 65%, 19.2% 53%, 20.8% 61%, 23.3% 88%, 24.6% 34%, 28.3% 92%, 30.7% 33%, 32.4% 71%, 35.0% 53%, 36.9% 88%, 40.7% 69%, 42.5% 62%, 44.6% 89%, 47.8% 75%, 49.9% 94%, 53.5% 83%, 57.0% 67%, 58.8% 58%, 61.1% 47%, 63.9% 90%, 65.7% 68%, 67.2% 97%, 69.4% 52%, 72.3% 33%, 74.4% 69%, 76.9% 69%, 80.2% 68%, 82.6% 82%, 84.4% 48%, 85.9% 81%, 89.1% 40%, 92.8% 35%, 96.3% 48%, 99.1% 61%, 100.0% 77%, 100% 0);
+  --tape-thin: polygon(0 20%, 12% 0, 31% 30%, 52% 5%, 74% 25%, 100% 0, 98% 80%, 79% 100%, 55% 70%, 33% 100%, 11% 75%, 1% 100%);
+}
+
+.torn-top {
+  position: relative;
+}
+.torn-top::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: calc(100% - 1px);
+  height: var(--torn-edge);
+  background: inherit;
+  clip-path: var(--torn-top);
+  pointer-events: none;
+}
+.torn-bottom::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% - 1px);
+  height: var(--torn-edge);
+  background: inherit;
+  clip-path: var(--torn-bottom);
+  pointer-events: none;
+}
+
+/* Focus: no box. A thick tape bar in the current text colour appears under
+   the element (its own section's contrasting colour), alongside the wipe. */
+.focus-tape {
+  position: relative;
+}
+.focus-tape:focus-visible {
+  outline: none;
+}
+.focus-tape:focus-visible::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  top: calc(100% + 6px);
+  height: 6px;
+  background: currentColor;
+  clip-path: var(--tape-thin);
+  pointer-events: none;
+}
+
+/* Chat launcher: the logo's coconuts shake briefly every few seconds,
+   pivoting where they hang from the fronds (components/chatbot.tsx). */
+@keyframes coconut-shake {
+  0%, 82%, 100% { transform: rotate(0deg); }
+  85% { transform: rotate(-7deg); }
+  88% { transform: rotate(6deg); }
+  91% { transform: rotate(-4deg); }
+  94% { transform: rotate(2deg); }
+}
+.coconut-shake {
+  transform-origin: 49% 31%;
+  animation: coconut-shake 4s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .coconut-shake { animation: none; }
+}
+
+/* White keyline around the chat launcher's tree so it never disappears
+   into the Palm Green sections. */
+.tree-outline {
+  filter: drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff);
 }

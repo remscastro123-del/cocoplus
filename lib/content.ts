@@ -128,6 +128,58 @@ export const process = {
     "Virgin Coconut Oil is recovered from coconut milk, the milky fluid obtained when freshly comminuted coconut kernel is pressed by mechanical means.",
     "Centrifuge extracted VCO is very smooth and light in taste, a true delicacy and is easily adborbed by the skin. This method gives a higher lauric acid than any other coconut oil. Centrifuged VCO is the premium oil!",
   ],
+  // Homepage process scroll (2026-11-05). Step copy is rewritten from the
+  // body above; step 03's density explanation is general centrifuge physics.
+  // Needs client review before launch. Images are AI-generated illustrations
+  // (Higgsfield), not photos of the Cocoplus facility.
+  steps: [
+    {
+      id: "kernel",
+      title: "Fresh kernel",
+      body: "It starts with the white kernel of fresh, mature coconuts, comminuted (finely grated) while it is still fresh and wet.",
+      specs: [
+        ["Input", "Fresh coconut kernel"],
+        ["Action", "Comminuted, finely grated"],
+      ],
+      image: "/images/process/step1.jpg",
+      alt: "Freshly grated white coconut kernel on a stainless steel tray beside a split coconut",
+    },
+    {
+      id: "press",
+      title: "Mechanical press",
+      body: "The grated kernel is pressed by mechanical means. What flows out is coconut milk, the milky fluid the oil is recovered from.",
+      specs: [
+        ["Input", "Grated kernel"],
+        ["Action", "Mechanical pressing"],
+        ["Output", "Coconut milk"],
+      ],
+      image: "/images/process/step2.jpg",
+      alt: "Coconut milk streaming from a stainless steel press into a glass beaker",
+    },
+    {
+      id: "centrifuge",
+      title: "Centrifuge",
+      body: "The coconut milk is spun at high speed. Oil, water and solids have different densities, so they separate into layers and the lighter oil is drawn off.",
+      specs: [
+        ["Principle", "Separation by density"],
+        ["Output", "Virgin coconut oil layer"],
+      ],
+      image: "/images/process/step3.jpg",
+      alt: "Glass centrifuge tubes showing an oil layer separated above cream and water",
+    },
+    {
+      id: "vco",
+      title: "Virgin coconut oil",
+      body: "Centrifuge extracted VCO is very smooth and light in taste, a true delicacy, and easily absorbed by the skin. This method gives a higher lauric acid than any other coconut oil.",
+      specs: [
+        ["Taste", "Light, mild and smooth"],
+        ["Method", "Fresh wet centrifuge"],
+      ],
+      quote: "Centrifuged VCO is the premium oil!",
+      image: "/images/process/step4.jpg",
+      alt: "Clear virgin coconut oil in a laboratory flask and vial beside a coconut half",
+    },
+  ],
 };
 
 export const certifications = {

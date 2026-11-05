@@ -31,8 +31,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${outfit.variable} ${bebas.variable} ${caveatBrush.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html
+      lang="en"
+      data-loading=""
+      suppressHydrationWarning
+      className={`${outfit.variable} ${bebas.variable} ${caveatBrush.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col">
+        {/* Without JS there is no preloader hand-over: drop the cover. */}
+        <noscript>
+          <style>{`[data-preloader]{display:none!important}html[data-loading]{overflow:auto!important}[data-nav-logo]{visibility:visible!important}`}</style>
+        </noscript>
+        {children}
+      </body>
     </html>
   );
 }

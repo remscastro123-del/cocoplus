@@ -2,47 +2,54 @@
 
 // React Bits Pro hero-17, reworked for Cocoplus: centred copy, main CTA,
 // certifications directly under the CTA (above the fold), then the full
-// product lineup on white (the photo's own background). Sharp corners only.
+// product lineup on white (the photo's own background). Everything enters
+// with the tape wipe (alternating sides), no fades. Sharp corners, no rules.
 import { motion } from "motion/react";
 import { hero, certifications } from "@/lib/content";
 import { CtaButton } from "@/components/cta-button";
+import { Tape } from "@/components/tape";
+import { wipeHidden, wipeShown } from "@/lib/use-wipe-in";
+import { useSafeReducedMotion } from "@/lib/use-reduced-motion";
+import { useSiteReady } from "@/lib/site-ready";
 
 export function Hero17() {
-  // Reduced motion is handled by <MotionConfig reducedMotion="user">.
-  const enter = (y: number, delay: number) => ({
-    initial: { opacity: 0, y },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.55, delay },
+  // Entrance waits for the preloader hand-over (above the fold).
+  const ready = useSiteReady();
+  const reduce = useSafeReducedMotion();
+  const wipe = (from: "left" | "right", delay = 0) => ({
+    initial: { clipPath: wipeHidden[from] },
+    animate: ready ? { clipPath: wipeShown } : undefined,
+    transition: reduce ? { duration: 0 } : { duration: 0.75, ease: [0.65, 0, 0.35, 1] as const, delay },
   });
 
   return (
-    <section className="relative w-full overflow-hidden bg-white pt-10 sm:pt-14 lg:pt-16 px-4 sm:px-6 lg:px-8">
+    <section className="relative w-full overflow-x-clip bg-white pt-12 sm:pt-16 lg:pt-20 px-4 sm:px-6 lg:px-8">
       <div className="relative max-w-[1400px] mx-auto w-full flex flex-col items-start sm:items-center text-left sm:text-center gap-5 sm:gap-6">
-        <motion.div {...enter(-8, 0.1)}>
-          {/* Sticker: informational only, not clickable */}
-          <span className="inline-flex -rotate-3 items-center px-4 pt-2 pb-1.5 bg-accent text-accent-foreground font-hand text-2xl leading-none select-none">
+        <motion.div {...wipe("left", 0.05)}>
+          {/* Informational label: one strip, no hover */}
+          <Tape angle={-3} clip={3} className="inline-flex px-4 pt-2 pb-1.5 font-hand text-2xl leading-none text-accent-foreground select-none">
             {hero.eyebrow}
-          </span>
+          </Tape>
         </motion.div>
 
-        <motion.h1 {...enter(18, 0.2)} className="font-heading text-6xl sm:text-7xl lg:text-9xl leading-[0.88] text-primary">
+        <motion.h1 {...wipe("right", 0.15)} className="font-heading text-6xl sm:text-7xl lg:text-9xl leading-[0.88] text-primary">
           {hero.title}
         </motion.h1>
 
-        <motion.p {...enter(12, 0.35)} className="text-base sm:text-lg text-foreground/85 leading-relaxed max-w-2xl">
+        <motion.p {...wipe("left", 0.3)} className="text-base sm:text-lg text-foreground leading-relaxed max-w-2xl">
           {hero.body}
         </motion.p>
 
-        <motion.div {...enter(12, 0.45)} className="w-full sm:w-auto pt-1">
+        <motion.div {...wipe("right", 0.4)} className="w-full sm:w-auto pt-1">
           <CtaButton href="#products" variant="primary" fullWidthOnMobile>
             View our products
           </CtaButton>
         </motion.div>
 
-        {/* Certifications, above the fold */}
+        {/* Certifications, above the fold. Plain text note, no strip or rule. */}
         <motion.div
-          {...enter(10, 0.55)}
-          className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 pt-3"
+          {...wipe("left", 0.5)}
+          className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-7 pt-4"
         >
           <ul className="flex items-center gap-4 sm:gap-5 order-2 sm:order-1" aria-label={certifications.title}>
             {certifications.logos.map((c) => (
@@ -51,19 +58,14 @@ export function Hero17() {
               </li>
             ))}
           </ul>
-          <div className="flex flex-col items-start text-left order-1 sm:order-2 sm:border-l-[3px] sm:border-primary sm:pl-6">
+          <div className="order-1 sm:order-2 flex flex-col items-start text-left">
             <span className="font-heading text-2xl text-primary leading-none tracking-[0.02em]">{certifications.note}</span>
-            <span className="text-sm text-foreground/80 mt-1">{certifications.cuNumber}</span>
+            <span className="text-sm text-muted-foreground mt-1">{certifications.cuNumber}</span>
           </div>
         </motion.div>
       </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.35 }}
-        className="relative mx-auto mt-6 sm:mt-8 w-full max-w-[1200px]"
-      >
+      <motion.div {...wipe("right", 0.35)} className="relative mx-auto mt-8 sm:mt-10 w-full max-w-[1200px]">
         <img
           src="/images/hero-lineup.jpg"
           alt="The Cocoplus range: organic coconut cooking oil, virgin coconut oil, coconut sugar, coconut milk powder, skimmed coconut milk and Mix & Cream"
