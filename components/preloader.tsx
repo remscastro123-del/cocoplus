@@ -19,7 +19,7 @@ const MAX_MS = 6000; // never hold the page hostage
 const G = 2600; // px/s², "normal" gravity at screen scale
 
 // Coconut silhouette: rounded husk with a slight point. Solid, no eyes.
-const COCONUT = "M50 4 C64 4 80 17 86 35 C94 60 84 92 50 96 C16 92 6 60 14 35 C20 17 36 4 50 4 Z";
+export const COCONUT = "M50 4 C64 4 80 17 86 35 C94 60 84 92 50 96 C16 92 6 60 14 35 C20 17 36 4 50 4 Z";
 
 type Nut = { x: number; y: number; r: number; size: number };
 

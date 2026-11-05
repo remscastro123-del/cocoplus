@@ -5,16 +5,13 @@
 // makes up facts. Anything it can't answer goes to the contact details.
 // Hooking it to a real assistant later only needs a new `reply()`.
 //
-// Look: tape language, no boxes. The launcher is the palm tree and coconuts
-// from the logo (images/tree-bare.png + tree-coconuts.png, so the coconuts
-// can shake every few seconds) with a speech bubble that pops out of
-// it once the site is ready and stays on the tree whenever the chat is
-// closed. The tree stays as it is when open; the panel's header X closes it.
-// On phones and tablets (below lg) the launcher is a chat head instead,
-// starting bottom right: a round Sun head with the
-// tree in it, draggable, snapping to the nearest side edge; tap opens.
-// The panel wipes up (clip-path), with a Lagoon header strip; bot lines sit
-// on Husk strips, visitor lines on Sky.
+// Look: tape language, no boxes. The launcher is the palm tree from the
+// logo (images/tree-bare.png + tree-coconuts.png, so the coconuts shake every
+// few seconds) planted at the bottom edge, with a coconut-shaped "Ask us"
+// badge at its base so it reads as the chat. On phones and tablets (below lg)
+// it is a draggable chat head (Sun disc with the tree, the same badge), which
+// snaps to the nearest side edge; tap opens. Phones open the chat fullscreen;
+// from sm up it is a panel with a Deep Lagoon border and the header X closes it.
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, SendHorizontal } from "lucide-react";
@@ -23,6 +20,7 @@ import { Tape } from "@/components/tape";
 import { panelClipAt, sideAt } from "@/lib/tape";
 import { useSiteReady } from "@/lib/site-ready";
 import { useSafeReducedMotion } from "@/lib/use-reduced-motion";
+import { COCONUT } from "@/components/preloader";
 
 type Msg = { from: "bot" | "you"; body: React.ReactNode; key: number };
 
@@ -146,7 +144,7 @@ function snap(x: number, y: number) {
   };
 }
 
-function ChatHead({ hidden, onOpen, reduce, nudge, onDismiss }: { hidden: boolean; onOpen: () => void; reduce: boolean; nudge: boolean; onDismiss: () => void }) {
+function ChatHead({ hidden, onOpen, reduce }: { hidden: boolean; onOpen: () => void; reduce: boolean }) {
   // Only rendered on the client (after the preloader), so window is there.
   // starts bottom right
   const [pos, setPos] = useState(() => snap(document.documentElement.clientWidth, document.documentElement.clientHeight));
@@ -167,8 +165,6 @@ function ChatHead({ hidden, onOpen, reduce, nudge, onDismiss }: { hidden: boolea
       ro.disconnect();
     };
   }, []);
-
-  const onRight = pos.x > document.documentElement.clientWidth / 2;
 
   return (
     // the wrapper is positioned (focus-tape sets position: relative on the button)
@@ -227,13 +223,8 @@ function ChatHead({ hidden, onOpen, reduce, nudge, onDismiss }: { hidden: boolea
       <span className={`relative block overflow-hidden rounded-full bg-accent transition-transform duration-200 ${dragging ? "scale-110" : ""}`} style={{ width: HEAD, height: HEAD }}>
         <TreeMark className="absolute -bottom-2 left-1/2 h-[88%] w-[88%] -translate-x-1/2" />
       </span>
+      <AskBadge className="-bottom-3 left-1/2 h-11 w-11 -translate-x-1/2 text-sm" />
     </button>
-    {/* nudge on top of the head, aligned to the side it is docked on */}
-    <div className={`absolute bottom-full mb-4 ${onRight ? "right-0" : "left-0"}`}>
-      <AnimatePresence>
-        {nudge && !hidden && !dragging && <Nudge key="nudge" onOpen={onOpen} onDismiss={onDismiss} reduce={reduce} tail={onRight ? "right" : "left"} />}
-      </AnimatePresence>
-    </div>
     </div>
   );
 }
@@ -250,47 +241,21 @@ function TreeMark({ className = "", outline = false }: { className?: string; out
   );
 }
 
-// "Hi! Ask me anything" nudge: sits on top of the tree / head with its tail
-// pointing down at it. The text opens the chat; the X dismisses the nudge
-// for good (remembered in this browser).
-const NUDGE_KEY = "cocoplus-chat-nudge-off";
-function readNudgeOff() {
-  try {
-    return localStorage.getItem(NUDGE_KEY) === "1";
-  } catch {
-    return false;
-  }
-}
-
-function Nudge({ onOpen, onDismiss, reduce, tail }: { onOpen: () => void; onDismiss: () => void; reduce: boolean; tail: "center" | "left" | "right" }) {
-  const tailPos = tail === "center" ? "left-1/2 -translate-x-1/2" : tail === "right" ? "right-6" : "left-6";
-  const origin = tail === "center" ? "50% 100%" : tail === "right" ? "90% 100%" : "10% 100%";
+// Coconut-shaped "Ask us" badge (logo Coconut Brown, Sun lettering, white
+// keyline so it holds up on any section colour). Decorative: the launcher
+// button carries the accessible name.
+function AskBadge({ className = "" }: { className?: string }) {
   return (
-    <motion.div
-      initial={reduce ? false : { scale: 0 }}
-      animate={{ scale: 1 }}
-      exit={{ scale: 0 }}
-      transition={reduce ? { duration: 0 } : { type: "spring", stiffness: 520, damping: 16, delay: 0.4 }}
-      style={{ transformOrigin: origin }}
-      className="relative"
-    >
-      <button type="button" onClick={onOpen} className="group focus-tape block">
-        <Tape bar="bg-accent" wipe="bg-white" clip={1} angle={-2} inset="inset-0" className="block whitespace-nowrap px-3.5 pt-2 pb-1.5 font-hand text-lg leading-none text-foreground">
-          Hi! Ask me anything
-        </Tape>
-      </button>
-      {/* dismiss: a small tab stuck on the bubble's upper-right corner */}
-      {/* (positioned wrapper: focus-tape sets position: relative on buttons) */}
-      <span className="absolute -top-3 -right-3 z-10 block">
-        <button type="button" onClick={onDismiss} aria-label="Dismiss chat message" className="group focus-tape block">
-          <Tape bar="bg-foreground" wipe="bg-primary" clip={2} angle={4} inset="inset-0" className="flex h-6 w-6 items-center justify-center text-primary-foreground">
-            <X className="h-3.5 w-3.5" strokeWidth={3} />
-          </Tape>
-        </button>
+    <span aria-hidden className={`pointer-events-none absolute flex items-center justify-center ${className}`}>
+      <svg viewBox="0 0 100 100" className="absolute inset-0 h-full w-full overflow-visible">
+        <path d={COCONUT} fill="#3f2500" stroke="#ffffff" strokeWidth={5} />
+      </svg>
+      <span className="relative pt-[6%] text-center font-hand leading-[0.85] text-accent">
+        Ask
+        <br />
+        us
       </span>
-      {/* tail, pointing down at the tree */}
-      <span aria-hidden className={`absolute -bottom-2.5 h-3 w-4 bg-accent [clip-path:polygon(0_0,100%_0,50%_100%)] ${tailPos}`} />
-    </motion.div>
+    </span>
   );
 }
 
@@ -304,15 +269,6 @@ export function Chatbot() {
   const ready = useSiteReady();
   const reduce = useSafeReducedMotion();
   const [open, setOpen] = useState(false);
-  const [nudgeOff, setNudgeOff] = useState(readNudgeOff);
-  const dismissNudge = () => {
-    setNudgeOff(true);
-    try {
-      localStorage.setItem(NUDGE_KEY, "1");
-    } catch {
-      // storage blocked: dismissed for this visit only
-    }
-  };
   const [msgs, setMsgs] = useState<Msg[]>([GREETING]);
   const [text, setText] = useState("");
   const [hint, setHint] = useState("");
@@ -365,7 +321,7 @@ export function Chatbot() {
 
   return (
     <>
-    <ChatHead hidden={open} onOpen={() => setOpen(true)} reduce={reduce} nudge={!nudgeOff} onDismiss={dismissNudge} />
+    <ChatHead hidden={open} onOpen={() => setOpen(true)} reduce={reduce} />
     {/* above the cookie strip while open (phones: the chat is fullscreen) */}
     <div className={`fixed right-4 flex flex-col items-end gap-3 sm:right-6 ${open ? "z-[70]" : "z-[54]"}`} style={{ bottom: "var(--cookie-h, 0px)" }}>
       <AnimatePresence>
@@ -468,12 +424,9 @@ export function Chatbot() {
         )}
       </AnimatePresence>
 
-      {/* launcher (lg up): the logo's palm tree, planted; the nudge sits on
-          top of it. The panel has its own X. */}
+      {/* launcher (lg up): the logo's palm tree, planted, with the "Ask us"
+          coconut at its base. The panel has its own X. */}
       <div className="relative hidden lg:block">
-        <div className="absolute bottom-[calc(100%-1.75rem)] left-1/2 z-10 -translate-x-1/2">
-          <AnimatePresence>{!open && !nudgeOff && <Nudge key="nudge" onOpen={() => setOpen(true)} onDismiss={dismissNudge} reduce={reduce} tail="center" />}</AnimatePresence>
-        </div>
         <button
           type="button"
           onClick={() => setOpen((o) => !o)}
@@ -485,6 +438,8 @@ export function Chatbot() {
           {/* planted: the trunk runs off the bottom edge (or into the cookie strip) */}
           <span className="relative -mb-4 block h-40 w-40">
             <TreeMark outline className="absolute inset-0 origin-bottom transition-transform duration-300 ease-out group-hover:-rotate-3 motion-reduce:transition-none" />
+            {/* on the trunk, just above the bottom edge */}
+            <AskBadge className="bottom-6 left-[calc(37%-2.5rem)] h-20 w-20 text-2xl transition-transform duration-300 group-hover:scale-110 motion-reduce:transition-none" />
           </span>
         </button>
       </div>
